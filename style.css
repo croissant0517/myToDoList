@@ -1,5 +1,7 @@
 body {
   font-family: 'Noto Sans', sans-serif;
+  top: 15%;
+	background: linear-gradient(to right, rgb(236, 138, 118), rgb(97, 245, 156));
 }
 
 .list-container {
@@ -7,7 +9,6 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
 }
 
