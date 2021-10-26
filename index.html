@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Javascript + DOM</title>
+	<title>My To Do List</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Rampart+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Rampart+One&family=Rock+Salt&display=swap" rel="stylesheet"
 </head>
 <body>
-	<h1>To Do List</h1>
-	<p id="first">Get it done today</p>
-	<input id="userinput" type="text" placeholder="enter items">
-	<button id="enter">Click me!</button>
-	<ul id = "list">
-		<li random="23">Make breakfast  </li>
-		<li>Reading  </li>
-		<li>Go to the supermarket  </li>
-		<li>Jogging  </li>
-		<li>Coding  </li>
-		<li>Meeting friends  </li>
-	</ul>
+	<div class="list-container">
+		<h1 class="title">To Do List</h1>
+		<p id="first">Get it done today!</p>
+		<div>
+			<input id="userinput" type="text" placeholder="Enter items">
+			<button id="enter">Add item to list</button>
+		</div>
+		<ul class="list" id = "list">
+			<li random="23">
+				<div>breakfast</div>
+			</li>
+			<li>
+				<div>Reading</div>
+			</li>
+			<li>
+				<div>Go to the supermarket</div>
+			</li>
+			<li>
+				<div>Jogging</div>
+			</li>
+			<li>
+				<div>Coding</div>
+			</li>
+			<li>
+				<div>friends</div>
+			</li>
+		</ul>
+	</div>
 	<script type="text/javascript" src="script.js"></script>
-
 </body>
 </html>

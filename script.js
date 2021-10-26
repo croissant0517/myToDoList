@@ -4,9 +4,7 @@ var ul = document.querySelector("ul");
 var liList = document.querySelectorAll("li"); 
 for (var i = 0 ; i < liList.length ; i++) {
 	creatDeleteButton();
-
 }
-
 
 function creatDeleteButton() {
 	var btn = document.createElement("button");
@@ -20,13 +18,14 @@ function inputLength() {
 
 function createListElement() {
 	var li = document.createElement("li");
-	li.appendChild(document.createTextNode(input.value+" "));
+	var div = document.createElement("div");
+	div.appendChild(document.createTextNode(input.value));
+	li.appendChild(div);
 	ul.appendChild(li);
 	input.value = "";
 	var deleteButton = document.createElement("button");
 	deleteButton.appendChild(document.createTextNode("Delete"));
 	li.appendChild(deleteButton);
-	
 }
 
 function addListAfterClick() {
@@ -46,10 +45,10 @@ function addLine() {
 }
 
 function addLineAfterClick() {
-	var liArray = document.querySelectorAll("li");
-	for (var i = 0 ; i < liArray.length; i++) {
+	var liArray = document.querySelectorAll("div");
+	for (var i = 1 ; i < liArray.length; i++) {
 		liArray[i].addEventListener("click", addLine);
-	};			
+	};
 }
 
 function deleteButton() {
@@ -70,19 +69,3 @@ input.addEventListener("keypress", addListAfterKeypress);
 ul.addEventListener("click", addLineAfterClick, true);
 
 ul.addEventListener("click", deleteListAfterClick, true);
-
-
-
-
-
-
-
-
-
-
-
-		
-
-
-	
-
