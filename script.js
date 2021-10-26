@@ -69,3 +69,4 @@ input.addEventListener("keypress", addListAfterKeypress);
 ul.addEventListener("click", addLineAfterClick, true);
 
 ul.addEventListener("click", deleteListAfterClick, true);
+
