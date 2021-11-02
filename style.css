@@ -4,6 +4,11 @@ body {
 	background: linear-gradient(to right, rgb(236, 138, 118), rgb(97, 245, 156));
 }
 
+a {
+  color: red;
+  font-size: 20px;
+}
+
 .list-container {
   display: flex;
   flex-direction: column;
